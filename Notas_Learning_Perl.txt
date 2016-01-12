@@ -1,0 +1,46 @@
+Operadoes em Perl:
+
+** -> Expoente.
+%  -> igual a mod ( resultado da divisao, parte inteira).
+/  -> divisao sempre float, para obter parte inteira usar 'int 15/4' = 3.
+
+-Por algum motivo, neste computador, letras maiusculas vem antes das letras
+minusculas, ou seja, na comparação 'A (less than) a', retorna 'true'.
+
+-Use =~ para casamento de padrão ( $var =~ m/padrao/ )
+	!~ nega o padrao, m/..../i para case insensitive
+
+-Pode-se substituir as '' ou "" por q/.../ ou q(...) ou q#.....# e qq/.../
+
+TABLE 3.2 Operator Precedence and Associativity
+Operator Associativity What it means
+-> 			left 		Dereference operator (Day 19, “Working with
+					References”
+++ -- 			non 		Increment and decrement
+** 			right 		Exponent
+! ~ \ + - 		right 		Logical not, bitwise not, reference (Day 19),
+					unary +, unary -
+=~ !~ 			left 		Pattern matching
+* / % x 		left 		Multiplication, division, modulus, string
+					repeat
++ - . 			left 		Add, subtract, string concatenate
+<< >>			left 		Bitwise left shift and right shift
+unary operators 	non 		Function-like operators (See today’s “Going Deeper” section)
+< > <= >= lt gt le ge 	non 		Tests
+== != <=> eq ne cmp 	non 		More tests (<=> and cmp, Day 8, “Data
+					Manipulation with Lists”)
+& 			left 		Bitwise AND
+| ^ 			left 		Bitwise OR, bitwise XOR
+&& 			left 		C-style logical AND
+|| 			left 		C-style logical OR
+.. 			non 		Range operator (Day 4, “Working with Lists
+					and Arrays”)
+?: 			right 		Conditional operator (Day 6, “Conditionals
+					and Loops”)
+= += -= *= /=, etc. 	right 		Assignment operators
+, => 			left 		Comma operators (Day 4)
+					list operators non list operators in list context (Day 4)
+not 			right 		Perl logical NOT
+and 			left 		Perl logical AND
+or xor 			left 		Perl logical OR and XOR
+
