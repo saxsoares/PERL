@@ -4,7 +4,7 @@
 
 $cookie = "";
 
-while ( $cookie ne 'cookie') {
+while ( $cookie !~ m/cookie/i) {
 	print 'Give me a cookie: ';
 	chop($cookie = <STDIN>);
 }

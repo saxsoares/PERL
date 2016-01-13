@@ -1,5 +1,5 @@
-#!/usr/local/bin/perl
+#!/usr/local/bin/perl -w 
 
-$a = 123;
-
-print( "uma \Q asdasasdasd \f asdasdasd asdasdvariavel \$a foi printada\n");
+$num = "fernando";
+print "um nome" . $num . " um espaço";
+	
