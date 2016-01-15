@@ -12,6 +12,7 @@ minusculas, ou seja, na comparação 'A (less than) a', retorna 'true'.
 
 -Pode-se substituir as '' ou "" por q/.../ ou q(...) ou q#.....# e qq/.../
 
+############################################################################
 TABLE 3.2 Operator Precedence and Associativity
 Operator Associativity What it means
 -> 			left 		Dereference operator (Day 19, “Working with
@@ -43,4 +44,14 @@ unary operators 	non 		Function-like operators (See today’s “Going Deeper” secti
 not 			right 		Perl logical NOT
 and 			left 		Perl logical AND
 or xor 			left 		Perl logical OR and XOR
+############################################################################
+
+This works:
+
+($a, $b) = (1, 2);
+($a, @array) = (1,2,3,4,5,6);   # $a = 1, @array = (2, 3, 4,5, 6)
+
+Atribuir á um escalar uma lista na forma (1,2,3) ira atribuir a variavel o
+ultimo valor da lista e ignorar o restante.
+
 
