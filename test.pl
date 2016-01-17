@@ -1,34 +1,20 @@
 #!/usr/local/bin/perl -w 
 
-#@array1 = (12,23,34,45,56);
-@a = (44,55,66,undef,234);
+%hash = ();
+$input = '';
+$x = '';
+$y = '';
 
-if (exists $a[3]){
-	print "True exists\nvalue - $a[3]\n";
-}
-else {
-	print "No exists";
-}
+while(){
+	print "\nEnter something: ";
+	chomp( $input = <STDIN> );
 
-if (defined $a[3]){
-	print "True defined\nvalue - $a[3]\n";
+	if( $input eq '' ) { last; }
+	
+	($x, $y) = split( ' ', $input );
+	$hash{ $x } = $y;
 }
-else {
-	print "No defined\n";
-}
+$, = ' ';
 
-delete $a[3];
+print each %hash;
 
-if (exists $a[3]){
-	print "True exists\nvaluej - $a[3]\n";
-}
-else {
-	print "No exists\n";
-}
-
-if (defined $a[3]){
-	print "True defined\nvalue - $a[3]\n";
-}
-else {
-	print "No defined\n";
-}

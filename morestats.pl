@@ -32,5 +32,7 @@ printf("Numeros de elementos: %d\n", scalar(@array));		#$cont\n";
 print "Soma: $sum\n";
 print "Minimo: $array[0]\n";
 print "Maximo: $array[$#array]\n";
+print "Numero da sorte $#array\n";
+print "Maximo 22 $array[-1]\n";
 printf("Average: %.2f\n", $average);
 print "Median: $median\n";
