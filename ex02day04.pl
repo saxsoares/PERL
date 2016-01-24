@@ -6,9 +6,9 @@ $two = 0;
 
 while(){
 	print "Enter with a first number: ";
-	chomp( $one = <STDIN> );
+	chomp( $one = <> );
 	print "Enter with a second number: ";
-	chomp( $two = <STDIN> );
+	chomp( $two = <> );
 
 	if( $one eq '' or $two eq '' ){
 		print "A number has been lost.\n";
