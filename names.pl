@@ -7,7 +7,8 @@ $lastn = '';
 
 while(){
 	print "Enter a name (first and last): ";
-	chomp( $input = <STDIN> );
+	$input = <STDIN> ;
+	chomp( $input );
 
 	if( $input eq ''){ last; }
 

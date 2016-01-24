@@ -54,4 +54,8 @@ This works:
 Atribuir á um escalar uma lista na forma (1,2,3) ira atribuir a variavel o
 ultimo valor da lista e ignorar o restante.
 
+usando foreach, a variavel usada para iterar sobre a lista é um ponteiro,
+entao, caso se altere o valor dela, estaremos alterando o real valor na lista
+tambem.
+
 
